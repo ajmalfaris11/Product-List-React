@@ -7,6 +7,12 @@ function Products() {
       <div className='header'>
       <h1>PRODUCTS</h1>
       </div>
+      
+      <main>
+        <div className='mainContainer'>
+          
+        </div>
+      </main>
     </>
   )
 }
