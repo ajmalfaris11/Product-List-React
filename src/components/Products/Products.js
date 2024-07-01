@@ -21,11 +21,11 @@ function Products() {
             >
               <Card.Img
                 variant="top"
-                className="my-4 w-75 align-self-center"
+                className="my-4 w-75 align-self-center phone-img"
                 src={require(`${item.image}`)}
               />
               <Card.Body className="d-flex flex-column align-items-center">
-                <div className="price-Container">
+                <div className="model-Container">
                   <Card.Title className="mb-2">{item.model}</Card.Title>
                 </div>
 

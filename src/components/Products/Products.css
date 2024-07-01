@@ -17,19 +17,27 @@ main {
 
 .mainContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     justify-content: space-around;
 }
 
 .model-Container {
     text-align: center;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .disc-container {
     text-align: center;
-    height: 60px;
+    height: 40px;
     overflow: hidden;
     margin-block: 10px;
     font-size: small;
+}
+
+.phone-img:hover {
+    scale: 1.1;
+    transition: 0.5s ease-in-out;
 }

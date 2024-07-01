@@ -40,7 +40,6 @@ function NavScrollExample() {
               placeholder="Search"
               className="me-2 border-dark"
               aria-label="Search"
-              
             />
             <Button variant="outline-dark">Search</Button>
           </Form>
