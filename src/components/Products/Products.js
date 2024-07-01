@@ -10,7 +10,9 @@ function Products() {
       
       <main>
         <div className='mainContainer'>
-          
+          <div>
+            
+          </div>
         </div>
       </main>
     </>

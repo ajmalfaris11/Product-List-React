@@ -4,8 +4,10 @@ import Products from './components/Products/Products';
 
 function App() {
   return (
-    <div>
-      <Products/>
+    <div className='App'>
+      <container>
+        <Products/>
+      </container>
     </div>
   );
 }
