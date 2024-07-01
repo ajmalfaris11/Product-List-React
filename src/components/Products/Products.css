@@ -13,7 +13,19 @@ main {
 
 .mainContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 24px;  
+    grid-template-columns: 1fr 1fr 1fr ;
     justify-content: space-around;
+}
+
+.model-Container {
+    text-align: center;
+    height: 50px;
+}
+
+.disc-container {
+    text-align: center;
+    height: 60px;
+    overflow: hidden;
+    margin-block: 10px;
+    font-size: small;
 }
