@@ -4,17 +4,18 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import smartLogo from './assets/icon/smartLogo.png';
 
 function NavScrollExample() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary shadow">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
+      <img style={{width:"70px"}} src={smartLogo} />
+      <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
+            style={{ maxHeight: '120px' }}
             navbarScroll
           >
             <Nav.Link href="#action1">Home</Nav.Link>
