@@ -8,14 +8,14 @@ import smartLogo from './assets/icon/smartLogo.png';
 
 function NavScrollExample() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary shadow">
+    <Navbar expand="lg" className="bg-white shadow">
       <Container fluid>
-      <img style={{width:"70px"}} src={smartLogo} />
+      <img style={{width:"70px", marginRight:"50px", marginLeft:"20px"}} src={smartLogo} />
       <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '120px' }}
+            style={{ maxHeight: '150px' }}
             navbarScroll
           >
             <Nav.Link href="#action1">Home</Nav.Link>
@@ -38,10 +38,11 @@ function NavScrollExample() {
             <Form.Control
               type="search"
               placeholder="Search"
-              className="me-2"
+              className="me-2 border-dark"
               aria-label="Search"
+              
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="outline-dark">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>

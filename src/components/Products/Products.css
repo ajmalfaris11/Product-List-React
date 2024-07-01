@@ -1,9 +1,13 @@
 .header {
     text-align: center;
-    background: rgb(184, 184, 184);
+    background: rgb(0, 0, 0);
     color: white;
-    padding: 10px;
+    padding: 2px;
     margin-bottom: 50px;
+}
+
+.header h1 {
+    font-weight: bolder;
 }
 
 main {

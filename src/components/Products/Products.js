@@ -38,16 +38,16 @@ function Products() {
                 <div className="d-flex align-items-center mb-3">
                   
                   <div>
-                    <Button variant="primary" className="m-2 px-3">
+                    <Button variant="dark" className="m-2 px-3">
                       -
                     </Button>
                       {item.qty}
-                    <Button variant="primary" className="m-2 px-3">
+                    <Button variant="dark" className="m-2 px-3">
                       +
                     </Button>
                   </div>
                 </div>
-                <Button variant="primary" className="w-100">
+                <Button variant="dark" className="w-100">
                   Buy Now
                 </Button>
               </Card.Body>
