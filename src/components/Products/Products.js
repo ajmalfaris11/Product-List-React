@@ -28,9 +28,9 @@ function Products() {
 
   return (
     <>
-      <div className="header shadow">
+      {/* <div className="header shadow">
         <h1>PREMEUM PHONES</h1>
-      </div>
+      </div> */}
       <main>
         <div className="mainContainer">
           {/* mapping the item from items */}

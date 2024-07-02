@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
@@ -7,9 +8,31 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import smartLogo from "./assets/icon/smart..png";
 import "./nav.css";
 
-function NavScrollExample() {
+const NavBar = () => {
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const handleScroll = () => {
+    if (window.scrollY > lastScrollY) {
+      // Scroll down
+      setShowNavbar(false);
+    } else {
+      // Scroll up
+      setShowNavbar(true);
+    }
+    setLastScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <Navbar expand="lg" className="bg-white shadow">
+    <Navbar expand="lg" className={`bg-white shadow ${showNavbar ? 'visible' : 'hidden'}`}>
       <Container fluid>
         <img
           style={{ width: "120px", marginRight: "50px", marginLeft: "20px" }}
@@ -19,7 +42,7 @@ function NavScrollExample() {
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
-            style={{maxHeight: "100vh" }}
+            style={{ maxHeight: "100vh" }}
             navbarScroll
           >
             <Nav.Link href="#action1">Home</Nav.Link>
@@ -31,11 +54,11 @@ function NavScrollExample() {
                 Whatsapp
               </NavDropdown.Item>
               <NavDropdown.Item href="#action5">
-                Twiter
+                Twitter
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#" disabled>
-              contact
+              Contact
             </Nav.Link>
           </Nav>
           <Form className="d-flex mr-3">
@@ -47,15 +70,14 @@ function NavScrollExample() {
             />
             <Button variant="outline-dark">Search</Button>
           </Form>
-          
-          <div className="d-flex justfy-content-center align-item-center h-100 nav-icons">
-            <span style={{ marginRight:'20px' }} className="material-symbols-outlined  fs-2 fw-light sp-bag">local_mall</span>
-            <span style={{ marginRight: '20px' }} class="material-symbols-outlined fs-2 fw-light">account_circle</span>
-        </div>
+          <div className="d-flex justify-content-center align-items-center h-100 nav-icons">
+            <span style={{ marginRight: '20px' }} className="material-symbols-outlined fs-2 fw-light sp-bag">local_mall</span>
+            <span style={{ marginRight: '20px' }} className="material-symbols-outlined fs-2 fw-light">account_circle</span>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
 
-export default NavScrollExample;
+export default NavBar;

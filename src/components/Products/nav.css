@@ -2,7 +2,18 @@
     margin-left: 50px;
 }
 
-
+.navbar {
+    transition: top 0.3s;
+  }
+  
+  .navbar.hidden {
+    top: -60px; /* Adjust based on your navbar height */
+  }
+  
+  .navbar.visible {
+    top: 0;
+  }
+  
 
 @media (max-width: 992px) {
     .nav-icons{
