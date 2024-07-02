@@ -6,6 +6,7 @@ import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Products() {
+
   // use state Hook
   const [items, setItems] = useState(phonesData);
 
@@ -28,7 +29,7 @@ function Products() {
   return (
     <>
       <div className="header">
-        <h1>SMART PHONES</h1>
+        <h1>PREMEUM PHONES</h1>
       </div>
       <main>
         <div className="mainContainer">
