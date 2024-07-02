@@ -28,7 +28,7 @@ function Products() {
 
   return (
     <>
-      <div className="header">
+      <div className="header shadow">
         <h1>PREMEUM PHONES</h1>
       </div>
       <main>

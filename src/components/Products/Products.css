@@ -2,18 +2,24 @@
     text-align: center;
     background: rgb(0, 0, 0);
     color: white;
-    padding: 2px;
-    margin-bottom: 50px;
+    padding: 1px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
 }
 
 .header h1 {
     font-weight: bolder;
     letter-spacing: 1rem;
+    font-size: small;
+    margin-top: 5px;
 }
 
 main {
     width: 100%;
     padding-inline: 5%;
+    padding-top: 100px;
+
 }
 
 .mainContainer {
