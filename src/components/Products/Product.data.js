@@ -80,6 +80,22 @@ export const phonesData = [
       price: 1299,
       image: "./assets/Asus-ROG-Phone-6-Ultimate.png",
       qty: 1,
+    },
+    {
+      id: 11,
+      model: "iPhone 12",
+      desc: "Apple's iPhone 12 with A14 Bionic chip, Super Retina XDR display, and dual-camera system for stunning photos and videos.",
+      price: 799,
+      image: "./assets/iPhone-12.png",
+      qty: 1
+    },
+    {
+      id: 12,
+      model: "Samsung Galaxy S21 Ultra",
+      desc: "Samsung's premium smartphone with a powerful Exynos 2100 processor, Dynamic AMOLED 2X display, and a versatile quad-camera setup.",
+      price: 1199,
+      image: "./assets/Samsung-Galaxy-S21-Ultra.png",
+      qty: 1
     }
   ];
   

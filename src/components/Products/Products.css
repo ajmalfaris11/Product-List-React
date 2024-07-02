@@ -8,6 +8,7 @@
 
 .header h1 {
     font-weight: bolder;
+    letter-spacing: 1rem;
 }
 
 main {
@@ -37,7 +38,10 @@ main {
     font-size: small;
 }
 
+.phone-img {
+    transition: 0.5s ease-in-out;
+}
+
 .phone-img:hover {
     scale: 1.1;
-    transition: 0.5s ease-in-out;
 }
