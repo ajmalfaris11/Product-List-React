@@ -18,7 +18,7 @@
 main {
     width: 100%;
     padding-inline: 5%;
-    padding-top: 100px;
+    padding-top: 80px;
 
 }
 
@@ -46,6 +46,9 @@ main {
     }
     .header h1{
         font-size: x-small;
+    }
+    main {
+        padding-top: 50px;
     }
 }
 

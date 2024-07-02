@@ -15,7 +15,7 @@ function NavBar() {
           style={{ width: "120px", marginRight: "50px", marginLeft: "20px" }}
           src={smartLogo}
         />
-        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Toggle aria-controls="navbarScroll" className="menu-icon" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
