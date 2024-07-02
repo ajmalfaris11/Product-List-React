@@ -48,11 +48,11 @@ function NavScrollExample() {
             <Button variant="outline-dark">Search</Button>
           </Form>
           
-        </Navbar.Collapse>
-        <div className="d-flex justfy-content-center align-item-center h-100 ">
+          <div className="d-flex justfy-content-center align-item-center h-100 ">
             <span style={{ marginLeft: '50px', marginRight:'20px' }} className="material-symbols-outlined  fs-2 fw-light">local_mall</span>
             <span style={{ marginRight: '20px' }} class="material-symbols-outlined fs-2 fw-light">account_circle</span>
-          </div>
+        </div>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
