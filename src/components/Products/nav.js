@@ -23,7 +23,7 @@ function NavScrollExample() {
             navbarScroll
           >
             <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Smartphones</Nav.Link>
+            <Nav.Link href="#action2" className="fw-bold">Smartphones</Nav.Link>
             <Nav.Link href="#action3">Gadgets</Nav.Link>
             <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Instagram</NavDropdown.Item>
