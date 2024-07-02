@@ -36,12 +36,11 @@ function Products() {
                   Price: <span>${item.price}</span>
                 </h5>
                 <div className="d-flex align-items-center mb-3">
-                  
                   <div>
                     <Button variant="dark" className="m-2 px-3">
                       -
                     </Button>
-                      {item.qty}
+                    {item.qty}
                     <Button variant="dark" className="m-2 px-3">
                       +
                     </Button>
