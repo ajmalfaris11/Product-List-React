@@ -4,7 +4,7 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import smartLogo from "./assets/icon/smartLogo.png";
+import smartLogo from "./assets/icon/smart..png";
 import "./nav.css";
 
 function NavScrollExample() {
@@ -12,14 +12,14 @@ function NavScrollExample() {
     <Navbar expand="lg" className="bg-white shadow">
       <Container fluid>
         <img
-          style={{ width: "70px", marginRight: "50px", marginLeft: "20px" }}
+          style={{ width: "120px", marginRight: "50px", marginLeft: "20px" }}
           src={smartLogo}
         />
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: "100vh" }}
+            style={{maxHeight: "100vh" }}
             navbarScroll
           >
             <Nav.Link href="#action1">Home</Nav.Link>
